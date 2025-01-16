@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* FONT */
+.title-bungee {
+    font-family: "Bungee", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.32);
+    font-size: 55px;
+}
+.subtitle-poppins {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.32);
+    font-size: 35px;
+}
+
+.text-roboto {
+  font-family: "Roboto", serif;
+  font-style: normal; 
+}
+
+.button-varela {
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* PALETTE COLOR */
+.title-color{
+    color: #FF6F61;
+}
+.subtitle-color{
+    color: #FFB88C;
+}
+.text-color{
+    color: #333333;
+}
+.button-color{
+    background-color: #4CAF50;
+}
+.button-color:hover{
+    background-color: #388E3C;
+}
+.bg-general{
+    background-color: #F9F9F9;
+}
+.bg-section{
+    background-color: #FFD54F;
+}
+
+
+/* INDEX */
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  
+}
+
+.game-container {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+    
+}
+
+.card {
+    background-color: #fff;
+    border: 0px;
+    cursor: pointer;
+    perspective: 1000px;
+    
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(0);
+    transition: transform 0.6s;
+}
+
+.card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-image: url('../images/marvel/sfondo-marvel.jpg');
+    background-size:cover; /* Per adattare l'immagine */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: rgb(122, 3, 3);
+    border-radius: 10px;
+}
