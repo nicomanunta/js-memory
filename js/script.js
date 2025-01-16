@@ -16,7 +16,7 @@ const images = [
     'images/marvel/ironman.png',
     'images/marvel/ironman2.png',
     'images/marvel/vision.png',
-    'images/marvel/wolverine.png',
+    'images/marvel/wolverine.png', 
 ];
 const cards = [...images, ...images]; // Doppio array per le coppie
 
