@@ -32,6 +32,7 @@
     font-family: "Varela Round", serif;
     font-weight: 400;
     font-style: normal;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.32);
 }
 
 /* PALETTE COLOR */
@@ -115,7 +116,6 @@ body {
 }
 
 .card-front {
-    background-image: url('../images/marvel/sfondo-marvel.jpg');
     background-size:cover; /* Per adattare l'immagine */
     background-position: center;
     display: flex;
@@ -126,6 +126,17 @@ body {
 
 .card-back {
     transform: rotateY(180deg);
-    background-color: rgb(122, 3, 3);
     border-radius: 10px;
 }
+
+.btn-memory{
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.32);
+ 
+}
+
+
+
