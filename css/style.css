@@ -13,7 +13,7 @@
     font-weight: 400;
     font-style: normal;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.32);
-    font-size: 55px;
+    font-size: 60px;
 }
 .subtitle-poppins {
     font-family: "Poppins", serif;
@@ -130,13 +130,16 @@ body {
 }
 
 .btn-memory{
-    height: 30px;
+    font-size: 25px;
     border: 0px;
     border-radius: 5px;
     padding: 0px 10px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.32);
  
 }
+
+
+
 
 
 

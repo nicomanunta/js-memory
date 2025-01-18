@@ -23,7 +23,7 @@ const marvelCards = [...marvels, ...marvels];
 
 
 // crea dinamicamente la griglia di carte
-marvelButton.addEventListener('click', () => {
+marvelButton.addEventListener('click', () => { 
   
   // svuoto la griglia 
   grid.innerHTML = '';
@@ -68,7 +68,8 @@ const pokemonCards = [...pokemons, ...pokemons];
 
 
 // crea dinamicamente la griglia di carte
-pokemonButton.addEventListener('click', () => {
+pokemonButton.addEventListener('click', () => { 
+
 
   // svuoto la griglia 
   grid.innerHTML = '';
@@ -81,6 +82,7 @@ pokemonButton.addEventListener('click', () => {
   scoreDisplay.textContent = score;
 
   pokemonCards.forEach(pokemon => {
+    
     const card = document.createElement('div');
     card.classList.add('card');
     card.innerHTML = `
@@ -125,6 +127,7 @@ function checkMatch() {
   }
 }
 
+
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
@@ -146,3 +149,5 @@ function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
+
+
