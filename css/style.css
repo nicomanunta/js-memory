@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+@import url('https://fonts.cdnfonts.com/css/marvel-2');
+                
+
+                
 *{
     margin: 0;
     padding: 0; 
@@ -129,15 +135,39 @@ body {
     border-radius: 10px;
 }
 
-.btn-memory{
+.btn-pokemon{
+    height: 55px;
+    width: 130px;
+    background-color: #4CAF50;
     font-size: 25px;
     border: 0px;
-    border-radius: 5px;
-    padding: 0px 10px;
+    border-radius: 10px;
+    padding: 0px 15px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.32);
- 
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcb05;
+    text-shadow:
+    3px 3px 0 #3d7dca,  /* Ombra in basso a destra */
+    -5px 5px 0 #003a70, /* Ombra in basso a sinistra */
+    3px -3px 0 #3d7dca, /* Ombra in alto a destra */
+    -5px -5px 0 #003a70; 
+                                                
+
+}
+.btn-marvel{
+    height: 55px;
+    width: 130px;
+    background-color: #F0131E;
+    font-size: 35px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0px 12px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.32);
+    font-family: 'Marvel', sans-serif;
+    color: white;
 }
 
+                                                
 
 
 

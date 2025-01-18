@@ -88,7 +88,7 @@ pokemonButton.addEventListener('click', () => {
     card.innerHTML = `
       <div class="card-inner">
         <div class="card-front" style="background-image: url('images/pokemon/sfondo-pokemon.jpg');"></div>
-        <div class="card-back" style="background-color: #FFD54F;">
+        <div class="card-back" style="background-color: #ffcb05;">
         <img style="width: 100%" src="${pokemon}" alt="">
         </div>
       </div>`;
